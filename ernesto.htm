@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mi Info</title>
+  <!-- Tipografía moderna (Google Fonts) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="wrapper">
+    <article class="card" aria-label="Tarjeta de información personal">
+      <!-- ====== Encabezado ====== -->
+      <header class="header">
+        <div class="avatar" aria-hidden="true">FOTO</div>
+        <div class="title">
+          <h1><!-- Tu Nombre aquí -->Nombre y Apellido</h1>
+          <p><!-- Un subtítulo breve -->Estudiante de Ingeniería Informática</p>
+        </div>
+        <div class="chip" title="Edad">
+          <!-- Cambia el valor -->
+          29 años
+        </div>
+      </header>
+
+      <!-- ====== Contenido principal ====== -->
+      <section class="content">
+        <div class="section">
+          <h2>Información básica</h2>
+          <div class="grid-2" role="list">
+            <div class="field" role="listitem">
+              <div class="label">Nombre</div>
+              <div class="value">Nombre y Apellido</div>
+            </div>
+            <div class="field" role="listitem">
+              <div class="label">Edad</div>
+              <div class="value">29</div>
+            </div>
+            <div class="field" role="listitem">
+              <div class="label">Ciudad</div>
+              <div class="value">Santiago, Chile</div>
+            </div>
+            <div class="field" role="listitem">
+              <div class="label">Email</div>
+              <div class="value">correo@ejemplo.com</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Motivos para estudiar la carrera</h2>
+          <ul class="list">
+            <li class="item">Me apasiona resolver problemas con tecnología.</li>
+            <li class="item">Quiero mejorar mis oportunidades laborales.</li>
+            <li class="item">Disfruto aprender y mantenerme actualizado.</li>
+          </ul>
+        </div>
+
+        <div class="section" style="grid-column: 1 / -1;">
+          <h2>Otros</h2>
+          <ul class="list">
+            <li class="item">Habilidades: Python, SQL, Git.</li>
+            <li class="item">Intereses: Ciencia de datos, ciberseguridad, IA.</li>
+            <li class="item">Hobbies: Natación, kickboxing, lectura.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ====== Pie con acciones opcionales ====== -->
+      <footer class="footer">
+        <a class="btn" href="#" onclick="alert('Aquí podrías enlazar a tu CV en PDF.'); return false;">Descargar CV</a>
+        <a class="btn" href="mailto:correo@ejemplo.com">Contactar</a>
+        <button class="btn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">Volver arriba</button>
+      </footer>
+    </article>
+  </main>
+</body>
+</html>
